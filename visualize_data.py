@@ -1,5 +1,6 @@
 import json
 import random
+path = "../FIG-benchmark/distribution_shifts"
 # data = [
 #     {"words": ["apple", "fruit"], "category": "Category1", "subcategory": "Sub1"},
 #     {"words": ["banana", "fruit"], "category": "Category1", "subcategory": "Sub1"},
@@ -22,7 +23,7 @@ def clean_text(string):
     return string
 
 data = []
-dirs = ["../FIG-benchmark/distribution_shifts/fig_e", "../FIG-benchmark/distribution_shifts/fig_p"] 
+dirs = [f"{path}/fig_e", f"{path}/fig_p"] 
 category_names = ["AlignGen-E", "AlignGen-P"]
 all_pairs = []
 for category_name, dir in zip(category_names, dirs):
@@ -73,7 +74,7 @@ color_map = {subcat: (color, color_bright) for subcat, color, color_bright in zi
 text_darkness_adjustment = 0  # You can adjust this value as needed
 
 
-def get_tool_tip(distribution, left=False):
+def get_tool_tip(distribution, left = False):
     def example(e):
         prompt = e["prompt"]
         prompt = prompt.replace("\n", "<br>")
@@ -89,13 +90,13 @@ def get_tool_tip(distribution, left=False):
         html += "</div>"
         return html
     
-    sample = random.sample(load_json(f"../FIG-benchmark/distributions/{distribution}/test.json"), 20)
+    sample = random.sample(load_json(f"{path}/../distributions/{distribution}/test.json"), 20)
     example_strings = [
         example(s) for s in sample
     ]
     id = random.randint(0, 10000)
     js = """
-        <div class=CLASS>
+        <div class="tooltip DIRECTION">
         <p id="randomText{ID}"></p>
         </div>
 
@@ -121,10 +122,7 @@ def get_tool_tip(distribution, left=False):
     var textOptions{ID} = example_strings
     </script>
 """
-    class_name = "tooltip"
-    if left:
-        class_name = "tooltip-left"
-    js = js.replace("CLASS", class_name)
+    js = js.replace("DIRECTION", "left" if left else "right")
     js = js.replace("{ID}", str(id))
     js = js.replace("example_strings", str(example_strings))
 
@@ -237,29 +235,25 @@ def generate_html(data):
                 height: auto;
                 border-radius: 5px;
                 z-index: 1;
-                right: -33vw; /* Adjust this value for vertical position */
+                /* right: -33vw; /* Adjust this value for vertical position */
                 transform: translateY(-50%);
             }
 
-            .left-tooltip {
-                display: none;
-                position: absolute;
-                background-color: #fff;
-                color: #000;
-                border-radius: 10px;
-                padding: 25px;
-                width: 33vw;
-                height: auto;
-                border-radius: 5px;
-                z-index: 1;
+            .left {
                 left: -33vw; /* Adjust this value for vertical position */
-                transform: translateY(-50%);
+            }
+            .right {
+                right: -33vw; /* Adjust this value for vertical position */
             }
             .word-pair:hover {
                 font-weight: bold;
             }
-            .word-pair:hover .tooltip .left-tooltip{
+            .word-pair:hover .tooltip {
                 display: block;
+            }
+            body {
+                padding-top: 20vh;
+                padding-bottom: 20vh;
             }
         </style>
     </head>
@@ -309,8 +303,8 @@ def generate_html(data):
         
         # tool_tip = "<div class=tooltip>NOICE</div>"
         for item in subcategory_data:
-            tool_tip_source = get_tool_tip(item["distributions"][0], left=True)
-            tool_tip_target = get_tool_tip(item["distributions"][1], left=True)
+            tool_tip_source = get_tool_tip(item["distributions"][0], left = True)
+            tool_tip_target = get_tool_tip(item["distributions"][1], left = True)
             html += f'<div class="word-pair-background" style="background-color: {color_bright}">'
             html += f'<span class="word-pair" style="color: {color}">{tool_tip_source}{item["distributions"][0]}</span>'
             html += f'<span class="arrow" style="color: {color}"> --> </span>'
@@ -330,10 +324,9 @@ def generate_html(data):
 html_content = generate_html(data)
 
 # Save to an HTML file and open in a browser (e.g., using the webbrowser module)
-with open('data_visualization.html', 'w') as f:
+with open('index.html', 'w') as f:
     f.write(html_content)
 
-import webbrowser
-webbrowser.open('data_visualization.html', new=2)  # new=2 opens in a new tab
-
+# import webbrowser
+# webbrowser.open('index.html', new=2)  # new=2 opens in a new tab
 
