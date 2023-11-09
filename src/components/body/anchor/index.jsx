@@ -10,11 +10,11 @@ const Anchor = () => {
                     <a href="#abstract" className="anchor__item ">
                         Abstract
                     </a>
-                    <a href="#outline" className="anchor__item">
-                        Overview
+                    <a href="#benchmark_datasets" className="anchor__item">
+                        Benchmark{<br />}datasets
                     </a>
                     <a href="#example" className="anchor__item">
-                        Examples
+                        All datasets
                     </a>
                 </div>
             </div>

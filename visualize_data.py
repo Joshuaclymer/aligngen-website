@@ -143,6 +143,13 @@ def get_tool_tip(distribution, left = False):
     # for distribution in distributions:
     #     data = load_json(f"../distributions/{distribution}/test.json")
 
+data = [
+    {"words": ["apple", "fruit"], "category": "AlignGen-E", "subcategory": "Skill"},
+    {"words": ["banana", "fruit"], "category": "AlignGen-E", "subcategory": "Quality"},
+    {"words": ["spinach", "vegetable"], "category": "AlignGen-E", "subcategory": "Context"},
+    {"words": ["carrot", "vegetable"], "category": "AlignGen-P", "subcategory": "Personas"},
+    {"words": ["mango", "fruit"], "category": "AlignGen-P", "subcategory": "Spurious"},
+]
 def generate_html(data):
     # HTML template with CSS for styling
     html = """
