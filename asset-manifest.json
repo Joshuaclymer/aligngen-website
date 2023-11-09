@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/aligngen-website/static/css/main.7c5bf884.css",
-    "main.js": "/aligngen-website/static/js/main.b1985a33.js",
-    "static/js/787.49742a11.chunk.js": "/aligngen-website/static/js/787.49742a11.chunk.js",
-    "static/media/hero_horizontal.png": "/aligngen-website/static/media/hero_horizontal.f025a328fd2c2991c26f.png",
-    "static/media/baselines.png": "/aligngen-website/static/media/baselines.e96bb0de77dc824136a8.png",
-    "static/media/slick.svg": "/aligngen-website/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/aligngen-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/aligngen-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/aligngen-website/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/aligngen-website/index.html",
-    "main.7c5bf884.css.map": "/aligngen-website/static/css/main.7c5bf884.css.map",
-    "main.b1985a33.js.map": "/aligngen-website/static/js/main.b1985a33.js.map",
-    "787.49742a11.chunk.js.map": "/aligngen-website/static/js/787.49742a11.chunk.js.map"
+    "main.css": "/generalization-analogies-website/static/css/main.fec5568b.css",
+    "main.js": "/generalization-analogies-website/static/js/main.b9d5a659.js",
+    "static/js/787.49742a11.chunk.js": "/generalization-analogies-website/static/js/787.49742a11.chunk.js",
+    "static/media/hero_horizontal.png": "/generalization-analogies-website/static/media/hero_horizontal.f025a328fd2c2991c26f.png",
+    "static/media/baselines.png": "/generalization-analogies-website/static/media/baselines.e96bb0de77dc824136a8.png",
+    "static/media/slick.svg": "/generalization-analogies-website/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/generalization-analogies-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/generalization-analogies-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/generalization-analogies-website/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/generalization-analogies-website/index.html",
+    "main.fec5568b.css.map": "/generalization-analogies-website/static/css/main.fec5568b.css.map",
+    "main.b9d5a659.js.map": "/generalization-analogies-website/static/js/main.b9d5a659.js.map",
+    "787.49742a11.chunk.js.map": "/generalization-analogies-website/static/js/787.49742a11.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c5bf884.css",
-    "static/js/main.b1985a33.js"
+    "static/css/main.fec5568b.css",
+    "static/js/main.b9d5a659.js"
   ]
 }
