@@ -19,7 +19,7 @@ const HeaderPage = () => {
 	return (
 		<div className='header'>
 			<h1 className='header__title'>
-				Generalization Analogies: a testbed for Controlling Reward Model Generalization to Hard-to-Measure Domains 🧞
+				Generalization Analogies: a Testbed for Controlling AI Systems in Hard-to-Measure Domains 🧞
 			</h1>
 			<p className='header__member'>
 				{authors.map((author, index) => (

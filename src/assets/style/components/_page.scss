@@ -147,7 +147,7 @@
         line-height: 30px;
         letter-spacing: 0em;
         text-align: left;
-        max-width: 810px;
+        // max-width: 810px;
         margin-inline: auto;
     }
 }
@@ -179,7 +179,7 @@
 }
 
 .outline__image img {
-    max-width: 810px;  /* make sure image doesn't grow larger than its container */
+    max-width: 900px;  /* make sure image doesn't grow larger than its container */
     height: auto;     /* maintain the image aspect ratio */
     display: block;   /* remove any margins around the image */
     margin: 0 auto;   /* center the image if it's smaller than the screen width */

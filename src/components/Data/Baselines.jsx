@@ -1,11 +1,22 @@
-import react from 'react';
-import data from './genies.json';
+import baselines from "../../assets/images/baselines.png";
 
 function Baselines() {
   return (
-    <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', width:'100%', marginBottom: '10vh'}}>
-      <h2 class="section__title">Baseline intervention scores</h2>
-      <img src="/images/baselines.png" alt="baselines" width='100%'/>
+    <div style={{ width: "100%", display:'flex', justifyContent:'center'}}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          maxWidth: "900px",
+          marginBottom: "10vh",
+        }}
+      >
+        <h2 class="section__title">Baselines</h2>
+        <img src={baselines} alt="baselines" width="100%" />
+      </div>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Example from "./example";
 import Data from "../Data/AllData.jsx";
 import BenchmarkData from "../Data/BenchmarkData.jsx";
 import Baselines from "../Data/Baselines.jsx";
+import hero from "../../assets/images/hero_horizontal.png";
 
 const BodyPage = () => {
   return (
@@ -14,11 +15,11 @@ const BodyPage = () => {
         {/* <Anchor /> */}
         <div style={{width:"100%"}}>
           <div className="outline__image">
-            <img src="/images/hero_horizontal.png" alt="hero horizontal" />
+            <img src={hero} alt="hero horizontal" />
           </div>
           <Abstract />
-          <BenchmarkData />
           <Baselines />
+          <BenchmarkData />
         <Data />
         </div>
       </div>
