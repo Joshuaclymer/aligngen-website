@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aligngen-website/static/css/main.06505ff5.css",
-    "main.js": "/aligngen-website/static/js/main.a226a810.js",
+    "main.js": "/aligngen-website/static/js/main.d96d453b.js",
     "static/js/787.49742a11.chunk.js": "/aligngen-website/static/js/787.49742a11.chunk.js",
     "static/media/slick.svg": "/aligngen-website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/aligngen-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/aligngen-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/aligngen-website/index.html",
     "main.06505ff5.css.map": "/aligngen-website/static/css/main.06505ff5.css.map",
-    "main.a226a810.js.map": "/aligngen-website/static/js/main.a226a810.js.map",
+    "main.d96d453b.js.map": "/aligngen-website/static/js/main.d96d453b.js.map",
     "787.49742a11.chunk.js.map": "/aligngen-website/static/js/787.49742a11.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06505ff5.css",
-    "static/js/main.a226a810.js"
+    "static/js/main.d96d453b.js"
   ]
 }
