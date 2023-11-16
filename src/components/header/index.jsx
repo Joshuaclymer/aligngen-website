@@ -5,10 +5,10 @@ import IconGithub from '../../assets/icons/IconGithub';
 const HeaderPage = () => {
 
 	const authors = [
-		{ name: "Joshua Clymer", affiliation: 1, bioLink: "https://www.linkedin.com/in/joshua-clymer/" },
-		{ name: "Garrett Baker", affiliation: null, bioLink: "" },
-		{ name: "Rohan Subramani", affiliation: 1, bioLink: "" },
-		{ name: "Sam Wang", affiliation: 1, bioLink: "" },
+		{ name: "Joshua Clymer", affiliation: 1, bioLink: "https://joshuaclymer.com" },
+		{ name: "Garrett Baker", affiliation: null, bioLink: "https://www.linkedin.com/in/garrett-baker-45972523a/" },
+		{ name: "Rohan Subramani", affiliation: 1, bioLink: "https://www.linkedin.com/in/rohan-subramani-70a919225" },
+		{ name: "Sam Wang", affiliation: 1, bioLink: "https://www.linkedin.com/in/sam-wang-79a696167/" },
 	];
 
 	const affiliations = [
