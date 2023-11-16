@@ -18,7 +18,7 @@ const HeaderPage = () => {
 
 	return (
 		<div className='header'>
-			<h1 className='header__title'>
+			<h1 className='header__title' style={{textAlign: "center"}}>
 				Generalization Analogies: a Testbed for Controlling AI Systems in Hard-to-Measure Domains 🧞
 			</h1>
 			<p className='header__member'>
@@ -40,15 +40,13 @@ const HeaderPage = () => {
 			</p>
 			<div className='header__tool'>
 				<div className='header__tool--item'>
-					<a href="todo" target="_blank" rel="noopener noreferrer">
+					<a href="https://arxiv.org/abs/2311.07723" target="_blank" rel="noopener noreferrer">
 						<IconAdobe />
 					</a>
 					<span className="icon-text">Paper</span>
-
-
 				</div>
 				<div className='header__tool--item'>
-					<a href="todo" target="_blank" rel="noopener noreferrer">
+					<a href="https://github.com/Joshuaclymer/GENIES" target="_blank" rel="noopener noreferrer">
 						<IconGithub />
 					</a>
 					<span className="icon-text">Code and Data</span>
