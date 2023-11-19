@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/generalization-analogies-website/static/css/main.434b905f.css",
-    "main.js": "/generalization-analogies-website/static/js/main.99709b45.js",
+    "main.js": "/generalization-analogies-website/static/js/main.cfc4bc4f.js",
     "static/js/787.49742a11.chunk.js": "/generalization-analogies-website/static/js/787.49742a11.chunk.js",
-    "static/media/hero_horizontal.png": "/generalization-analogies-website/static/media/hero_horizontal.f025a328fd2c2991c26f.png",
+    "static/media/hero_horizontal.png": "/generalization-analogies-website/static/media/hero_horizontal.e27c8582077943a07849.png",
     "static/media/hero_mobile.png": "/generalization-analogies-website/static/media/hero_mobile.70a5eeba47722fa7098d.png",
     "static/media/baselines.png": "/generalization-analogies-website/static/media/baselines.bb5bce53e5cee581c60e.png",
     "static/media/baselines_mobile.png": "/generalization-analogies-website/static/media/baselines_mobile.80247f1be0eb312a5a94.png",
@@ -13,11 +13,11 @@
     "static/media/slick.woff": "/generalization-analogies-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/generalization-analogies-website/index.html",
     "main.434b905f.css.map": "/generalization-analogies-website/static/css/main.434b905f.css.map",
-    "main.99709b45.js.map": "/generalization-analogies-website/static/js/main.99709b45.js.map",
+    "main.cfc4bc4f.js.map": "/generalization-analogies-website/static/js/main.cfc4bc4f.js.map",
     "787.49742a11.chunk.js.map": "/generalization-analogies-website/static/js/787.49742a11.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.434b905f.css",
-    "static/js/main.99709b45.js"
+    "static/js/main.cfc4bc4f.js"
   ]
 }
